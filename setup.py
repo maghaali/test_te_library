@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="test_te_library",
+    name="test_te_library_3",
     version="2021.10",
     author="Example Author",
     author_email="author@example.com",
@@ -23,4 +23,9 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.9",
+    install_requires=[
+        'pandas',
+        'numpy',
+        'plotly'
+        ]
 )
